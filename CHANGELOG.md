@@ -1,4 +1,10 @@
-## [Unreleased](https://github.com/micromdm/micromdm/compare/v1.11.0...main)
+## [Unreleased](https://github.com/micromdm/micromdm/compare/v1.12.0...main)
+
+## [v1.12.0](https://github.com/micromdm/micromdm/compare/v1.11.0...v1.12.0)
+
+This release includes new features and fixes.
+
+Thanks to our contributors: @grahamgilbert, @jamesez, @korylprince
 
 - Add `-log-time` flag to include timestamps in log messages (#890)
 - Add `-device-signature-skew` flag to allow configuring clock skew when verifying device signatures (#887)
@@ -6,10 +12,12 @@
 - Add support for inspecting the MDM command queue (#895)
   - See the [docs](https://github.com/micromdm/micromdm/blob/main/docs/user-guide/api-and-webhooks.md#inspecting-the-command-queue) for how to use
 - Fix HTTP status codes being swallowed by -http-debug flag (#906)
+- Remove unused tools package
 - Fix pkg signature checks on non-macOS platforms (#930, #962)
-- Project dependency updates (#888, #889, #900)
-
-Thanks to our contributors: @grahamgilbert, @jamesez, @korylprince
+- Add go:generate for command_queued protobuf
+- Switch to [smallstep/pkcs7](https://github.com/smallstep/pkcs7) for PKCS7 library (#944)
+- Remove PayloadScope=System from enrollment profile (See #766)
+- Project dependency updates (#881, #888, #899, #900, #918, #933, #946, #948, #954, #958, #960, #961)
 
 ## [v1.11.0](https://github.com/micromdm/micromdm/compare/v1.10.1...v1.11.0)
 
